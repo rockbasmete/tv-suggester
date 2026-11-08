@@ -1,0 +1,49 @@
+.root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  color: #8b93a7;
+}
+
+.status {
+  text-align: center;
+  color: #8b93a7;
+  padding: 40px 0;
+}
+
+.error {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #7f2d3f;
+  border-radius: 12px;
+  background: #2a1420;
+  text-align: center;
+}
+
+.retryButton {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #e53e5c;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background: #c92f4b;
+  }
+}

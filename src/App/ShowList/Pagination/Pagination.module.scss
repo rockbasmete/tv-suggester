@@ -1,0 +1,32 @@
+.root {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.button {
+  min-width: 36px;
+  padding: 8px 12px;
+  border: 1px solid #2c3547;
+  border-radius: 8px;
+  background: #161c29;
+  color: #b6bdd0;
+  cursor: pointer;
+
+  &:hover:not(:disabled):not(.active) {
+    border-color: #4f7cff;
+    color: #e8ecf4;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+.active {
+  background: #4f7cff;
+  border-color: #4f7cff;
+  color: #fff;
+}
