@@ -41,26 +41,5 @@ npm run lint   # oxlint
 npm run build  # type-check + production build
 ```
 
-## Деплой на GitHub Pages (бесплатно)
 
-В репозитории уже лежит workflow `.github/workflows/deploy.yml` — он собирает
-проект и публикует `dist/` на GitHub Pages при каждом пуше в `main`.
-
-1. Создайте репозиторий на GitHub и запушьте код:
-
-   ```bash
-   git remote add origin https://github.com/<ваш-логин>/<имя-репозитория>.git
-   git push -u origin main
-   ```
-
-2. В GitHub откройте **Settings → Pages** и в разделе **Source** выберите
-   **GitHub Actions**.
-
-3. После завершения workflow (вкладка **Actions**) сайт будет доступен по адресу:
-
-   ```
-   https://<ваш-логин>.github.io/<имя-репозитория>/
-   ```
-
-Относительный `base: './'` в `vite.config.ts` уже настроен, поэтому приложение
 работает на Pages независимо от имени репозитория.
